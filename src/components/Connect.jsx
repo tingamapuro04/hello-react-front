@@ -1,8 +1,7 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Connect = () => {
-
   const data = useSelector((state) => state.apiData.data);
 
   return (
@@ -12,6 +11,6 @@ const Connect = () => {
       {data && <p>{data.body}</p>}
     </div>
   );
-}
+};
 
-export default Connect
+export default Connect;
